@@ -4,9 +4,9 @@ import sys
 from albert import *
 import json
 
-__title__ = "Show laravel project on chrome"
+__title__ = "Show laravel projects on chrome"
 __version__ = "0.4.0"
-__triggers__ = "test "
+__triggers__ = "si "
 __authors__ = "pkboom"
 
 icon = "{}/icon.png".format(path.dirname(__file__))

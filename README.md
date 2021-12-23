@@ -1,4 +1,4 @@
-# Show laravel projects on chrom with .test
+# Show laravel projects on chrome
 
 ## Usage
 
@@ -16,4 +16,4 @@ Add urls to `sites.json` to show them on the search list.
 
 ### Trigger
 
-Trigger this extension with `test`.
+Trigger this extension with `si`.
