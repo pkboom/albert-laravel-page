@@ -4,7 +4,7 @@
 
 ### Change `code`
 
-This is a laravel projects dirctory.
+This is a laravel project dirctory.
 
 ```python
 code = '/home/y/code'
