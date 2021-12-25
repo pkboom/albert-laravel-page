@@ -6,7 +6,7 @@ import json
 
 __title__ = "Show laravel projects on chrome"
 __version__ = "0.4.0"
-__triggers__ = "test "
+__triggers__ = "si "
 __authors__ = "pkboom"
 
 icon = "{}/icon.png".format(path.dirname(__file__))
@@ -29,6 +29,8 @@ sites = path.join(dir, 'sites.json')
 file = open(sites)
 projects.extend(json.load(file))
 file.close()
+
+print(projects)
 
 def handleQuery(query):
     items = []
