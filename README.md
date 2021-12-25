@@ -16,4 +16,4 @@ Add urls to `sites.json` to show them on the search list.
 
 ### Trigger
 
-Trigger this extension with `si`.
+Trigger this extension with `test`.
