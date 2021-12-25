@@ -1,8 +1,9 @@
+from albert import *
+import json
+import re
 from os import path
 from os import walk
 import sys
-from albert import *
-import json
 
 __title__ = "Show laravel projects on chrome"
 __version__ = "0.4.0"
@@ -33,20 +34,21 @@ file.close()
 def handleQuery(query):
     items = []
 
-    if query.isTriggered:
-        if not query.isValid:
-            return
+    if not query.isTriggered or not query.isValid:
+        return
+        
+    regexp = query.string.strip().replace(" ", ".*")
 
-        for project in projects:
-            if query.string.strip() in project: 
-                items.append(Item(
-                    id=project,
-                    icon=icon,
-                    text=project,
-                    actions=[ProcAction(
-                        text="This action runs vscode.", 
-                        commandline=['google-chrome-stable', project]
-                    )],
-                ))
+    for project in projects:
+        if re.search(regexp, project): 
+            items.append(Item(
+                id=project,
+                icon=icon,
+                text=project,
+                actions=[ProcAction(
+                    text="This action runs vscode.", 
+                    commandline=['google-chrome-stable', project]
+                )],
+            ))
 
     return items
