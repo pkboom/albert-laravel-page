@@ -30,8 +30,6 @@ file = open(sites)
 projects.extend(json.load(file))
 file.close()
 
-print(projects)
-
 def handleQuery(query):
     items = []
 
