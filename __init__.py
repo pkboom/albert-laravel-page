@@ -14,15 +14,12 @@ icon = "{}/icon.png".format(path.dirname(__file__))
 
 code = '/home/y/code'
 
-results = []
 projects = []
 
 for root, dirs, files in walk(code):
-    results.extend(dirs)
+    for project in dirs:
+        projects.append(project + '.test')
     break
-
-for project in results:
-    projects.append(project + '.test')
 
 dir = path.dirname(path.abspath(__file__))
 sites = path.join(dir, 'sites.json')
