@@ -14,25 +14,30 @@ icon = "{}/icon.png".format(path.dirname(__file__))
 
 code = '/home/y/code'
 
-projects = []
-
-for root, dirs, files in walk(code):
-    for project in dirs:
-        projects.append(project + '.test')
-    break
-
 dir = path.dirname(path.abspath(__file__))
+
 sites = path.join(dir, 'sites.json')
 
 file = open(sites)
-projects.extend(json.load(file))
+
+projects = json.load(file)
+
 file.close()
 
+print(projects)
+
 def handleQuery(query):
-    items = []
 
     if not query.isTriggered or not query.isValid:
         return
+
+    for root, dirs, files in walk(code):
+        for project in dirs:
+            projects.append(project + '.test')
+        break
+
+    items = []
+
         
     regexp = query.string.strip().replace(" ", ".*")
 
