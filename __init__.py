@@ -3,7 +3,6 @@ import json
 import re
 from os import path
 from os import walk
-import sys
 
 __title__ = "Show laravel projects on chrome"
 __version__ = "0.4.0"
