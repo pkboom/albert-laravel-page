@@ -40,7 +40,7 @@ def handleQuery(query):
             items.append(Item(
                 id=project,
                 icon=icon,
-                text=project,
+                text = project.replace("http://", ""),
                 actions=[ProcAction(
                     text="This action runs vscode.", 
                     commandline=['google-chrome-stable', project]
