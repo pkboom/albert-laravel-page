@@ -6,7 +6,7 @@ from os import walk
 
 __title__ = "Show laravel projects on chrome"
 __version__ = "0.4.0"
-__triggers__ = "si "
+__triggers__ = "pa "
 __authors__ = "pkboom"
 
 icon = "{}/icon.png".format(path.dirname(__file__))

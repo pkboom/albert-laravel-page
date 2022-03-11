@@ -1,4 +1,4 @@
-# Show laravel projects on chrome
+# Show laravel project page on chrome
 
 ## Project directory
 
@@ -18,4 +18,4 @@ Add urls to `urls.json` in the root directory of each project.
 
 ## Trigger
 
-Trigger this extension with `si`.
+Trigger this extension with `pa `.
