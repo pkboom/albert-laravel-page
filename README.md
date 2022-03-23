@@ -1,4 +1,4 @@
-# Show laravel project page on chrome
+# Show a laravel project page on chrome
 
 # Add a directory
 
