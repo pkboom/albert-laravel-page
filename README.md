@@ -1,12 +1,15 @@
 # Show laravel project page on chrome
 
-## Project directory
+# Add a directory
 
 ```python
-code = '/home/y/code'
+_dirs = [
+    '/home/y/code',
+    '/path/to/directory',
+]
 ```
 
-## Add urls
+# Add urls
 
 Add urls to `urls.json` in the root directory of each project.
 
@@ -16,6 +19,6 @@ Add urls to `urls.json` in the root directory of each project.
 ]
 ```
 
-## Trigger
+# Trigger
 
 Trigger this extension with `pa `.
